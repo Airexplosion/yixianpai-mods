@@ -1,4 +1,71 @@
 {
   "schema": 1,
-  "mods": []
+  "mods": [
+    {
+      "id": "com.yx.arena",
+      "name": "练习场",
+      "version": "0.14.2",
+      "author": "yxp",
+      "description": "完全本地的练习对局：图鉴点牌即发牌、摆牌、炼化，双方的牌 / 血量 / 体魄都能改，打木人或自己摆的对手。不进房间、不发包。模式选择 → 单人模式 →「练习场」进场（后备热键 CTRL+ALT+1）。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/Airexplosion/yixianpai-arena",
+      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.14.2/com.yx.arena-0.14.2.zip",
+      "sha256": "5f80a9d152eb6408061eb62813f98ea30a640c41df3e7b5545ea64539a18d5a6"
+    },
+    {
+      "id": "com.yx.arenaprobe",
+      "name": "练习场探针（实验）",
+      "version": "0.3.0",
+      "author": "yxp",
+      "description": "练习场方案 B 的实机探针，不是成品：CTRL+ALT+0 状态 / 1 从大厅进场 / 2 本地对局状态 / 3 换手牌 / 4 打木人 / 5 回大厅。只在不在任何房间里时工作，全程不发包。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/Airexplosion/yixianpai-arenaprobe",
+      "download": "https://github.com/Airexplosion/yixianpai-arenaprobe/releases/download/v0.3.0/com.yx.arenaprobe-0.3.0.zip",
+      "sha256": "4d2b612fdcd0b9c1e7a37382ce33e4f513efe07dcb0a3e78b013a569e3546493"
+    },
+    {
+      "id": "com.yx.cardcounter",
+      "name": "记牌器",
+      "version": "0.1.0",
+      "author": "yxp",
+      "description": "弈仙牌记牌器：在每张牌上显示牌库里还剩几份（每卡 8 份，抽 -1，换牌 -3）。纯读游戏协议 + 状态，不发包、不改任何东西。搬运自 yxphud 的纯记牌版（去掉伤害计算器与跳过战斗）。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/Airexplosion/yixianpai-cardcounter",
+      "download": "https://github.com/Airexplosion/yixianpai-cardcounter/releases/download/v0.1.0/com.yx.cardcounter-0.1.0.zip",
+      "sha256": "4ffecceff5dbf94bdb9b58cd901776bdcfef2c63a82d97ccec123bd359e0d5c8"
+    },
+    {
+      "id": "com.yx.gamepad",
+      "name": "手柄适配",
+      "version": "0.1.0",
+      "author": "yxp",
+      "description": "Xbox 手柄操作弈仙牌：左摇杆导航牌面/菜单、B 确认、A 取消，右摇杆摆牌/收回/换位，LB 炼化、RB 换牌、LT 合成、X 突破、RT 长按准备、Back 五行玉瓶、Start 设置、Y 表情。全部走游戏自己的 UI，不发包。插上手柄启用即可。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/Airexplosion/yixianpai-gamepad",
+      "download": "https://github.com/Airexplosion/yixianpai-gamepad/releases/download/v0.1.0/com.yx.gamepad-0.1.0.zip",
+      "sha256": "354ee5ea87cbbabe1a0f1463f2fc3bfbfa04b7b2a38bb2fb3ebe8c4963ec6bbf"
+    },
+    {
+      "id": "com.yx.padprobe",
+      "name": "手柄探针",
+      "version": "0.1.0",
+      "author": "yxp",
+      "description": "诊断用:每帧读 Unity Input 的手柄状态(手柄名/按钮/各轴),把非零的打到日志。用来确认 Unity 能不能读到右摇杆。插上手柄推摇杆看日志。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/Airexplosion/yixianpai-padprobe",
+      "download": "https://github.com/Airexplosion/yixianpai-padprobe/releases/download/v0.1.0/com.yx.padprobe-0.1.0.zip",
+      "sha256": "f86077b32ad41cc855664a09570c0b18d5f713fc12963ebb6c0cc0376c4eb0d5"
+    },
+    {
+      "id": "com.yx.skipbattle",
+      "name": "斗法跳过按钮",
+      "version": "1.0.1",
+      "author": "yxp",
+      "description": "一进入斗法阶段就调出游戏自带的「跳过战斗」按钮（游戏自己要到第 16 回合才给）。只调出按钮、不加速，按不按由你决定。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/Airexplosion/yixianpai-skipbattle",
+      "download": "https://github.com/Airexplosion/yixianpai-skipbattle/releases/download/v1.0.1/com.yx.skipbattle-1.0.1.zip",
+      "sha256": "c3a4e7bd18012402f1659959a30b3298da66f55acf5cecafafd53d1fda5eeea1"
+    }
+  ]
 }
