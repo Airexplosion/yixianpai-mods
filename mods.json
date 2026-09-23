@@ -2,6 +2,16 @@
   "schema": 1,
   "mods": [
     {
+      "id": "com.lejiu.dangeralert",
+      "name": "危险牌预警",
+      "version": "1.0.0",
+      "author": "lejiu",
+      "description": "按玩家累计对手出过的牌，命中危险牌表就在屏幕顶部预警（只报当前对战那个敌人）；F6 开关大面板，面板内可直接编辑危险牌表，支持命名预设、牌池筛选与牌名搜索。全部只读、不发包。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/luolexiao/yixianpai-dangeralert",
+      "download": "https://github.com/luolexiao/yixianpai-dangeralert/releases/download/v1.0.0/com.lejiu.dangeralert-1.0.0.zip",
+      "sha256": "0f06a50bb32150b728bd1253e0dc0cdc501a20ef983233ba8716369d0dbf7529"
+    },    {
       "id": "com.yx.arena",
       "name": "练习场",
       "version": "0.14.2",
