@@ -26,13 +26,13 @@
     {
       "id": "com.yx.cardcounter",
       "name": "记牌器",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "yxp",
-      "description": "弈仙牌记牌器：在每张牌上显示牌库里还剩几份（每卡 8 份，抽 -1，换牌 -3）。纯读游戏协议 + 状态，不发包、不改任何东西。搬运自 yxphud 的纯记牌版（去掉伤害计算器与跳过战斗）。",
+      "description": "弈仙牌记牌器：在每张牌上显示牌库里还剩几份（每卡 8 份、化神期 6 份，抽 -1，换牌 -3）。纯读游戏协议 + 状态，不发包、不改任何东西。搬运自 yxphud 的纯记牌版（去掉伤害计算器与跳过战斗）。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-cardcounter",
-      "download": "https://github.com/Airexplosion/yixianpai-cardcounter/releases/download/v0.1.0/com.yx.cardcounter-0.1.0.zip",
-      "sha256": "4ffecceff5dbf94bdb9b58cd901776bdcfef2c63a82d97ccec123bd359e0d5c8"
+      "download": "https://github.com/Airexplosion/yixianpai-cardcounter/releases/download/v0.1.1/com.yx.cardcounter-0.1.1.zip",
+      "sha256": "e85584cca268622f2d015ef909fd0486b1c17fe0627273c603d17785d747f0cf"
     },
     {
       "id": "com.yx.gamepad",
