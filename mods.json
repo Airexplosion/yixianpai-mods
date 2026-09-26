@@ -70,13 +70,13 @@
     {
       "id": "com.yx.guides",
       "name": "流派攻略订阅",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "author": "yxp",
       "description": "在游戏内发现和订阅人工攻略，支持原生秘籍详情查看、卡组、角色、副职与仙命信息。Ctrl+Alt+G 打开。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-guides",
-      "download": "https://github.com/Airexplosion/yixianpai-guides/releases/download/v0.1.6/com.yx.guides-0.1.6.zip",
-      "sha256": "9598743d1d972ca0982f09fc81c15387ae3bb934f0ac7f721d1c28ced733a8dd"
+      "download": "https://github.com/Airexplosion/yixianpai-guides/releases/download/v0.1.7/com.yx.guides-0.1.7.zip",
+      "sha256": "f59aed3b43303b5fbce09d7c5f84690e4ea1b4ef28b6998fb2a8527611912c8b"
     }
   ]
 }
