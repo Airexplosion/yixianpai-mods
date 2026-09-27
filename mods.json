@@ -63,8 +63,8 @@
       "author": "yxp",
       "description": "在残局、普通复盘和本地练习场中计算先手与后手的摆牌方案，支持一键按推荐方案摆牌。",
       "sdkVersion": ">=1.0.0 <2.0.0",
-      "repo": "https://github.com/Airexplosion/yxp-mod-loader",
-      "download": "https://github.com/Airexplosion/yxp-mod-loader/releases/download/com.yx.canju-v0.2.3/com.yx.canju-0.2.3.zip",
+      "repo": "https://github.com/Airexplosion/yixianpai-mods",
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.3/com.yx.canju-0.2.3.zip",
       "sha256": "96b23dae37286e72ef6dc7e8fe0eb6b88c1f0c20628670aa580846bb178a7dfd"
     },
     {
@@ -74,8 +74,8 @@
       "author": "yxp",
       "description": "在原生战绩详情中显示双方已选天衍仙命，并将额外速度并入修为数字。",
       "sdkVersion": ">=1.0.0 <2.0.0",
-      "repo": "https://github.com/Airexplosion/yxp-mod-loader",
-      "download": "https://github.com/Airexplosion/yxp-mod-loader/releases/download/com.yx.recordextras-v1.0.8/com.yx.recordextras-1.0.8.zip",
+      "repo": "https://github.com/Airexplosion/yixianpai-mods",
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.recordextras-v1.0.8/com.yx.recordextras-1.0.8.zip",
       "sha256": "c4c5b435794b77e657a6cd26e0af2457b475ccd0a9e334361450954a243f5540"
     }
   ]
