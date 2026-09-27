@@ -4,24 +4,24 @@
     {
       "id": "com.yx.arena",
       "name": "练习场",
-      "version": "0.14.2",
+      "version": "0.16.0",
       "author": "yxp",
-      "description": "完全本地的练习对局：图鉴点牌即发牌、摆牌、炼化，双方的牌 / 血量 / 体魄都能改，打木人或自己摆的对手。不进房间、不发包。模式选择 → 单人模式 →「练习场」进场（后备热键 CTRL+ALT+1）。",
+      "description": "完全本地的练习对局：发牌、摆牌、炼化，编辑双方卡牌与属性。战绩中点「复盘」自动携带当前轮次、双方卡牌和仙命进入练习场；同时启用「残局求解」即可求解、一键摆牌。不进房间、不发包。普通入口：单人模式 → 练习场（CTRL+ALT+1）。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-arena",
-      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.14.2/com.yx.arena-0.14.2.zip",
-      "sha256": "5f80a9d152eb6408061eb62813f98ea30a640c41df3e7b5545ea64539a18d5a6"
+      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.0/com.yx.arena-0.16.0.zip",
+      "sha256": "0b53bdd72582549d81ce4bbd10b2e885de60a3db3a1f966e8fc4a34f81cd7fef"
     },
     {
       "id": "com.yx.cardcounter",
       "name": "记牌器",
-      "version": "0.1.1",
+      "version": "0.2.1",
       "author": "yxp",
       "description": "弈仙牌记牌器：在每张牌上显示牌库里还剩几份（每卡 8 份、化神期 6 份，抽 -1，换牌 -3）。纯读游戏协议 + 状态，不发包、不改任何东西。搬运自 yxphud 的纯记牌版（去掉伤害计算器与跳过战斗）。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-cardcounter",
-      "download": "https://github.com/Airexplosion/yixianpai-cardcounter/releases/download/v0.1.1/com.yx.cardcounter-0.1.1.zip",
-      "sha256": "e85584cca268622f2d015ef909fd0486b1c17fe0627273c603d17785d747f0cf"
+      "download": "https://github.com/Airexplosion/yixianpai-cardcounter/releases/download/v0.2.1/com.yx.cardcounter-0.2.1.zip",
+      "sha256": "672da013a44e2c3e66650528a19276f834aa6afb6b1ede7fdcb054f16bd12174"
     },
     {
       "id": "com.yx.gamepad",
