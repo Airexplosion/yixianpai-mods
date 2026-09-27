@@ -13,17 +13,6 @@
       "sha256": "5f80a9d152eb6408061eb62813f98ea30a640c41df3e7b5545ea64539a18d5a6"
     },
     {
-      "id": "com.yx.arenaprobe",
-      "name": "练习场探针（实验）",
-      "version": "0.3.0",
-      "author": "yxp",
-      "description": "练习场方案 B 的实机探针，不是成品：CTRL+ALT+0 状态 / 1 从大厅进场 / 2 本地对局状态 / 3 换手牌 / 4 打木人 / 5 回大厅。只在不在任何房间里时工作，全程不发包。",
-      "sdkVersion": ">=1.0.0 <2.0.0",
-      "repo": "https://github.com/Airexplosion/yixianpai-arenaprobe",
-      "download": "https://github.com/Airexplosion/yixianpai-arenaprobe/releases/download/v0.3.0/com.yx.arenaprobe-0.3.0.zip",
-      "sha256": "4d2b612fdcd0b9c1e7a37382ce33e4f513efe07dcb0a3e78b013a569e3546493"
-    },
-    {
       "id": "com.yx.cardcounter",
       "name": "记牌器",
       "version": "0.1.1",
@@ -46,17 +35,6 @@
       "sha256": "354ee5ea87cbbabe1a0f1463f2fc3bfbfa04b7b2a38bb2fb3ebe8c4963ec6bbf"
     },
     {
-      "id": "com.yx.padprobe",
-      "name": "手柄探针",
-      "version": "0.1.0",
-      "author": "yxp",
-      "description": "诊断用:每帧读 Unity Input 的手柄状态(手柄名/按钮/各轴),把非零的打到日志。用来确认 Unity 能不能读到右摇杆。插上手柄推摇杆看日志。",
-      "sdkVersion": ">=1.0.0 <2.0.0",
-      "repo": "https://github.com/Airexplosion/yixianpai-padprobe",
-      "download": "https://github.com/Airexplosion/yixianpai-padprobe/releases/download/v0.1.0/com.yx.padprobe-0.1.0.zip",
-      "sha256": "f86077b32ad41cc855664a09570c0b18d5f713fc12963ebb6c0cc0376c4eb0d5"
-    },
-    {
       "id": "com.yx.skipbattle",
       "name": "斗法跳过按钮",
       "version": "1.0.1",
@@ -77,6 +55,28 @@
       "repo": "https://github.com/Airexplosion/yixianpai-guides",
       "download": "https://github.com/Airexplosion/yixianpai-guides/releases/download/v0.1.8/com.yx.guides-0.1.8.zip",
       "sha256": "3ec2e397db57a4cf4a1b7b3fdd8b936d244dd0a84dab8eca1e35c2126728aac3"
+    },
+    {
+      "id": "com.yx.canju",
+      "name": "残局求解",
+      "version": "0.2.3",
+      "author": "yxp",
+      "description": "在残局、普通复盘和本地练习场中计算先手与后手的摆牌方案，支持一键按推荐方案摆牌。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/Airexplosion/yxp-mod-loader",
+      "download": "https://github.com/Airexplosion/yxp-mod-loader/releases/download/com.yx.canju-v0.2.3/com.yx.canju-0.2.3.zip",
+      "sha256": "96b23dae37286e72ef6dc7e8fe0eb6b88c1f0c20628670aa580846bb178a7dfd"
+    },
+    {
+      "id": "com.yx.recordextras",
+      "name": "战绩详情补充信息",
+      "version": "1.0.8",
+      "author": "yxp",
+      "description": "在原生战绩详情中显示双方已选天衍仙命，并将额外速度并入修为数字。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/Airexplosion/yxp-mod-loader",
+      "download": "https://github.com/Airexplosion/yxp-mod-loader/releases/download/com.yx.recordextras-v1.0.8/com.yx.recordextras-1.0.8.zip",
+      "sha256": "c4c5b435794b77e657a6cd26e0af2457b475ccd0a9e334361450954a243f5540"
     }
   ]
 }
