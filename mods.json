@@ -59,13 +59,13 @@
     {
       "id": "com.yx.canju",
       "name": "残局求解",
-      "version": "0.2.4",
+      "version": "0.2.5",
       "author": "yxp",
-      "description": "在残局、普通复盘和本地练习场中计算先手与后手的摆牌方案，支持随机胜率提示、固定随机种子和一键按推荐方案摆牌。",
+      "description": "在残局、普通复盘和本地练习场中计算先后手摆牌方案，适配 2026-09-29 新卡、触发条件、奇偶牌序及仙魔战斗策略；支持随机胜场提示、固定种子和一键摆牌。练习场仙魔计数读取需更新后的加载器 Core 与练习场。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.4/com.yx.canju-0.2.4.zip",
-      "sha256": "ac6bd2c5cecb911d7a653cf7d3e0d48dd9bb7b9a16475f802ca9a7803a20fd84"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.5/com.yx.canju-0.2.5.zip",
+      "sha256": "3450ef788952ffd638534075cf16d99e23987fe6dc647c211b7ed931b2d067b4"
     },
     {
       "id": "com.yx.recordextras",
