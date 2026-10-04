@@ -1,0 +1,10 @@
+{
+  "id": "com.yx.recordextras",
+  "name": "战绩详情补充信息",
+  "version": "1.0.9",
+  "author": "yxp",
+  "description": "在原生战绩详情中显示双方已选天衍仙命，并将额外速度并入修为数字。",
+  "sdkVersion": ">=1.0.0 <2.0.0",
+  "entry": "plugins/RecordExtras.dll",
+  "entryType": "YxRecordExtras.RecordExtrasMod"
+}

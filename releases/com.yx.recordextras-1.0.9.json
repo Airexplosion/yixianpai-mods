@@ -1,0 +1,12 @@
+{
+  "id": "com.yx.recordextras",
+  "version": "1.0.9",
+  "sha256": "363b0f8fedcaf7cdac74e981f2a9efc6517c725c7835d6ea6f3571a575c0bb73",
+  "dllSha256": "f8dc437217a7fde1d0b9d91ed32bba238609d9e7689f311a730199e6dc12e7a5",
+  "testsPassed": 22,
+  "constructedSnapshotComparisons": 400,
+  "ilErrors": 0,
+  "ilWarnings": 6,
+  "inGameValidated": false,
+  "sourceProvenance": "Recovered from local 1.0.8 release DLL, then fixed"
+}

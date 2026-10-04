@@ -1,0 +1,51 @@
+name: Publish record extras package
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'releases/com.yx.recordextras-*.zip'
+      - 'releases/com.yx.recordextras-*.json'
+      - '.github/workflows/publish-recordextras.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate package and source manifest
+        shell: python
+        run: |
+          import hashlib, json, pathlib, zipfile
+          root = pathlib.Path('sources/com.yx.recordextras')
+          manifest = json.loads((root / 'com.yx.recordextras/manifest.json').read_text(encoding='utf-8-sig'))
+          version = manifest['version']
+          metadata = json.loads(pathlib.Path(f'releases/com.yx.recordextras-{version}.json').read_text(encoding='utf-8-sig'))
+          package = pathlib.Path(f'releases/com.yx.recordextras-{version}.zip')
+          assert metadata['version'] == version
+          assert hashlib.sha256(package.read_bytes()).hexdigest() == metadata['sha256']
+          with zipfile.ZipFile(package) as archive:
+              assert sorted(archive.namelist()) == ['com.yx.recordextras/manifest.json', 'com.yx.recordextras/plugins/RecordExtras.dll']
+              assert json.loads(archive.read('com.yx.recordextras/manifest.json')) == manifest
+              assert hashlib.sha256(archive.read('com.yx.recordextras/plugins/RecordExtras.dll')).hexdigest() == metadata['dllSha256']
+          print(f'Validated record extras {version}')
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          version=$(python -c "import json; print(json.load(open('sources/com.yx.recordextras/com.yx.recordextras/manifest.json',encoding='utf-8-sig'))['version'])")
+          tag="com.yx.recordextras-v${version}"
+          package="releases/com.yx.recordextras-${version}.zip"
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release ${tag} already exists; no overwrite performed."
+            exit 0
+          fi
+          gh release create "$tag" "$package" \
+            --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --title "战绩详情补充信息 ${version}：修为与额外速度修正" \
+            --notes-file "releases/com.yx.recordextras-${version}.md"

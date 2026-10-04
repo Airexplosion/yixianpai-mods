@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Canju</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Yx.ModSdk.Core">
+      <HintPath>downloads/decompiler-refs/Yx.ModSdk.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DarkSun.HotUpdate">
+      <HintPath>downloads/decompiler-refs/DarkSun.HotUpdate.dll</HintPath>
+    </Reference>
+    <Reference Include="Yx.ModSdk">
+      <HintPath>downloads/decompiler-refs/Yx.ModSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>downloads/decompiler-refs/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>downloads/decompiler-refs/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>downloads/decompiler-refs/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="DarkSun.Utility">
+      <HintPath>downloads/decompiler-refs/DarkSun.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="DarkSun.UI">
+      <HintPath>downloads/decompiler-refs/DarkSun.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

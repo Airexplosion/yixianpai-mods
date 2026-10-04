@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+**/plugins/
+**/dist/
+**/refs/
+**/sdk/net40/
+**/NativeSpeedOracle.cs
+sources/yixianpai-mod-sdk/
+*.dll
+*.pdb
+*.user
+*.log

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>RecordExtras</AssemblyName>
+    <RootNamespace>YxRecordExtras</RootNamespace>
+    <TargetFramework>net40</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+    <Version>1.0.9</Version>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DebugType>none</DebugType>
+    <OutputPath>..\com.yx.recordextras\plugins\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <YxRefs>$(MSBuildThisFileDirectory)..\..\yixianpai-mod-sdk\refs\</YxRefs>
+    <YxSdk>$(MSBuildThisFileDirectory)..\..\yixianpai-mod-sdk\sdk\net40\</YxSdk>
+    <Deterministic>true</Deterministic>
+    <NoWarn>CS1701;CS1702</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net40" Version="1.0.3" PrivateAssets="all" />
+    <Reference Include="Yx.ModSdk.Core"><HintPath>$(YxSdk)Yx.ModSdk.Core.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Yx.ModSdk"><HintPath>$(YxSdk)Yx.ModSdk.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="DarkSun.HotUpdate"><HintPath>$(YxRefs)DarkSun.HotUpdate.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="DarkSun.Utility"><HintPath>$(YxRefs)DarkSun.Utility.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="DarkSun.UI"><HintPath>$(YxRefs)DarkSun.UI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="wProtobuf"><HintPath>$(YxRefs)wProtobuf.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UniRx"><HintPath>$(YxRefs)UniRx.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(YxRefs)UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.TextMeshPro"><HintPath>$(YxRefs)Unity.TextMeshPro.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>$(YxRefs)UnityEngine.UI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.InputLegacyModule"><HintPath>$(YxRefs)UnityEngine.InputLegacyModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UIModule"><HintPath>$(YxRefs)UnityEngine.UIModule.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>
