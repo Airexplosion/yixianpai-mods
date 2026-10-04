@@ -70,13 +70,13 @@
     {
       "id": "com.yx.recordextras",
       "name": "战绩详情补充信息",
-      "version": "1.0.8",
+      "version": "1.0.9",
       "author": "yxp",
-      "description": "在原生战绩详情中显示双方已选天衍仙命，并将额外速度并入修为数字。",
+      "description": "在原生战绩详情中显示双方已选天衍仙命，并将额外速度并入修为数字。1.0.9 使用当前轮次战前修为快照，补齐速度 Buff、五行仙命与速度刻印；22 项测试通过，实机界面效果待验证。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.recordextras-v1.0.8/com.yx.recordextras-1.0.8.zip",
-      "sha256": "c4c5b435794b77e657a6cd26e0af2457b475ccd0a9e334361450954a243f5540"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.recordextras-v1.0.9/com.yx.recordextras-1.0.9.zip",
+      "sha256": "363b0f8fedcaf7cdac74e981f2a9efc6517c725c7835d6ea6f3571a575c0bb73"
     }
   ]
 }
