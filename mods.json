@@ -59,13 +59,13 @@
     {
       "id": "com.yx.canju",
       "name": "残局求解",
-      "version": "0.2.8",
+      "version": "0.2.9",
       "author": "yxp",
-      "description": "在残局、复盘和本地练习场中计算先后手摆牌。首次点击只打开左侧空白秘籍，点顶部「求解」才计算；每条推荐左侧可独立一键摆牌，留手牌行除外。统一清晰文字按钮；修复慕虎先天满元开局升级，保留已有体魄与体魄上限修复及新卡 / 仙魔策略支持。随机抽样胜场与固定种子可配置。",
+      "description": "在残局 / 复盘 / 本地练习场中求解，打开左侧秘籍后点顶部「求解」，每条方案可单独一键摆牌。保留 0.2.8 的清晰按钮、慕虎升级及已有体魄修复；新增整局复盘服务接口，仍可独立使用，PvP 不开放。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.8/com.yx.canju-0.2.8.zip",
-      "sha256": "bdd2e1736c45984deedd8849c641f539130660bb35e886b2b1191207e9b43cc2"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.9/com.yx.canju-0.2.9.zip",
+      "sha256": "c5ad27670a2051674b868289b7afe58cca4fc1983a8d34fb7d0ed5418ce7e69e"
     },
     {
       "id": "com.yx.recordextras",
@@ -77,6 +77,17 @@
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
       "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.recordextras-v1.0.9/com.yx.recordextras-1.0.9.zip",
       "sha256": "363b0f8fedcaf7cdac74e981f2a9efc6517c725c7835d6ea6f3571a575c0bb73"
+    },
+    {
+      "id": "com.yx.wholereview",
+      "name": "整局复盘",
+      "version": "0.1.0",
+      "author": "yxp",
+      "description": "战绩详情的「复盘」上方增加「整局复盘」。用当轮手牌与上场牌、固定对手摆法和实际先后手逐轮求解，轮次上方标记可赢 / 必败；未穷举或随机抽样未发现赢法时标记未定。只读，不进入战斗、不摆牌。需同时启用残局求解 0.2.9 或更新版本。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/Airexplosion/yixianpai-mods",
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.0/com.yx.wholereview-0.1.0.zip",
+      "sha256": "0868b3de281782ddf6d7b24c1442184f38fdfad6be7bee654ab29190b70e896a"
     }
   ]
 }
