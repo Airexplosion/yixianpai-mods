@@ -59,13 +59,13 @@
     {
       "id": "com.yx.canju",
       "name": "残局求解",
-      "version": "0.2.9",
+      "version": "0.2.10",
       "author": "yxp",
-      "description": "在残局 / 复盘 / 本地练习场中求解，打开左侧秘籍后点顶部「求解」，每条方案可单独一键摆牌。保留 0.2.8 的清晰按钮、慕虎升级及已有体魄修复；新增整局复盘服务接口，仍可独立使用，PvP 不开放。",
+      "description": "在残局 / 复盘 / 本地练习场里求解（PvP 不可用）。点设置按钮组下方的「残局求解」或 Ctrl+Alt+J 打开左侧秘籍，点顶部「求解」才开始计算；每条推荐方案右上方可独立一键摆牌。练习场中换边即可替另一方求解；修改局面后旧结果失效。含原生代码。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.9/com.yx.canju-0.2.9.zip",
-      "sha256": "c5ad27670a2051674b868289b7afe58cca4fc1983a8d34fb7d0ed5418ce7e69e"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.10/com.yx.canju-0.2.10.zip",
+      "sha256": "957e8525ef6f51f29f3cb28a30a585dc56b3a7ca04d2c16979a65c0540934d07"
     },
     {
       "id": "com.yx.recordextras",
@@ -81,13 +81,24 @@
     {
       "id": "com.yx.wholereview",
       "name": "整局复盘",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "yxp",
-      "description": "战绩详情的「复盘」上方增加「整局复盘」。用当轮手牌与上场牌、固定对手摆法和实际先后手逐轮求解，轮次上方标记可赢 / 必败；未穷举或随机抽样未发现赢法时标记未定。只读，不进入战斗、不摆牌。需同时启用残局求解 0.2.9 或更新版本。",
+      "description": "战绩详情的「回放」左边增加原生样式「整局复盘」按钮。用当轮手牌与上场牌、固定对手摆法和实际先后手逐轮求解，轮次上方标记可赢 / 必败；未穷举或随机抽样未发现赢法时标记未定。只读，不进入战斗、不摆牌。需同时启用残局求解 0.2.9 或更新版本。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.0/com.yx.wholereview-0.1.0.zip",
-      "sha256": "0868b3de281782ddf6d7b24c1442184f38fdfad6be7bee654ab29190b70e896a"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.1/com.yx.wholereview-0.1.1.zip",
+      "sha256": "4ced42eb77a85c56be785c145dcd01af8b4404e3e4f8b04eba58e28c117053e2"
+    },
+    {
+      "id": "com.yx.statuscalc",
+      "name": "状态计算器",
+      "version": "0.1.6",
+      "author": "yxp",
+      "description": "只在备战显示可拖动的一行数字；点击打开原生窗口，可选择悬浮显示自己血量 / 对方血量 / 我方造伤 / 独立造伤，并记住选择。横排前10轮，支持先后手切换；独立造伤不读取对手牌组，命元损失含慈念曲、仙命及共鸣。Ctrl+Alt+S 开关窗口。含原生计算库。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/Airexplosion/yixianpai-mods",
+      "sha256": "12817c9e4b8c0c0e1bbd93b32f93b915ad86dd63b0c9111581d6894d773bf13f",
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.statuscalc-v0.1.6/com.yx.statuscalc-0.1.6.zip"
     }
   ]
 }
