@@ -81,13 +81,13 @@
     {
       "id": "com.yx.wholereview",
       "name": "整局复盘",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "yxp",
-      "description": "战绩详情的「回放」左边增加原生样式「整局复盘」按钮。用当轮手牌与上场牌、固定对手摆法和实际先后手逐轮求解，轮次上方标记可赢 / 必败；未穷举或随机抽样未发现赢法时标记未定。只读，不进入战斗、不摆牌。需同时启用残局求解 0.2.9 或更新版本。",
+      "description": "战绩详情增加原生「整局复盘」按钮，按钮组左移并留出下一轮箭头；轮次列表以独立深色底白字标签显示可赢 / 必败。用当轮手牌与上场牌、固定对手摆法和实际先后手逐轮求解；未穷举或随机抽样未发现赢法时标记未定。只读，不进入战斗、不摆牌。需同时启用残局求解 0.2.9 或更新版本。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.1/com.yx.wholereview-0.1.1.zip",
-      "sha256": "4ced42eb77a85c56be785c145dcd01af8b4404e3e4f8b04eba58e28c117053e2"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.2/com.yx.wholereview-0.1.2.zip",
+      "sha256": "c80ba9152f40735f1f8be277c245eb5ca9c788a40b1e1d1309bec88dd0cd6dd9"
     },
     {
       "id": "com.yx.statuscalc",
