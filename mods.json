@@ -4,13 +4,13 @@
     {
       "id": "com.yx.arena",
       "name": "练习场",
-      "version": "0.16.7",
+      "version": "0.16.8",
       "author": "yxp",
-      "description": "完全本地的练习对局：发牌、摆牌、炼化，编辑双方卡牌与属性。0.16.7 修补复盘可缺省附加记录为空时的导入异常，增加导入阶段与缺项诊断；保留发牌图鉴、五行阵旗手牌识别及悟剑、澄心剑、玉瓶与残局求解联动。219 项测试通过，报错战绩实机复验待确认。不进房间、不发包。单人模式 → 练习场（CTRL+ALT+1）。",
+      "description": "完全本地的练习对局，发牌、摆牌、斗法与双方数据编辑。0.16.8修复从战绩复盘进入练习场黑屏：补齐缺省仙命策略记录，初始化只刷新一次并等待原生备战界面，补齐未开打直接回大厅的原生退出入口。第15轮导入、开打、双方切换与退出实机验证通过。保留图鉴、澄心剑、悟剑、玉瓶及残局求解等现有功能。模式选择 → 单人模式 → 练习场，或CTRL+ALT+1。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-arena",
-      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.7/com.yx.arena-0.16.7.zip",
-      "sha256": "3ebe25de1f6c3a79f6871d4de595cffbff03a27bf9a70b8323c203b6393b72ab"
+      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.8/com.yx.arena-0.16.8.zip",
+      "sha256": "e64031cd066a1ff937c38ca676abc469602920bd499566b1a84ceaadc5f2136b"
     },
     {
       "id": "com.yx.cardcounter",
@@ -81,13 +81,13 @@
     {
       "id": "com.yx.wholereview",
       "name": "整局复盘",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "author": "yxp",
-      "description": "战绩详情原生「整局复盘」逐轮寻找赢法：用当轮手牌与上场牌、固定对手摆法和实际先后手，不设每轮时限和摆法数量上限；找到赢法即结束该轮，未找到则持续遍历，算完才判必败。显示遍历进度，可随时停止；随机抽样无胜样本仍标未定。只读，不进入战斗、不摆牌。需同时启用残局求解 0.2.13 或更新版本。",
+      "description": "战绩详情原生「整局复盘」逐轮寻找赢法：当轮手牌与上场牌、固定对手摆法和实际先后手，不设每轮时限和摆法数量上限；找到赢法即结束该轮，未找到则持续遍历，算完才判必败。0.1.4默认自动检测并使用全部可用逻辑处理器，可手动设置线程数。显示遍历进度，可随时停止；随机抽样无胜样本仍标未定。只读，不进入战斗、不摆牌。需同时启用残局求解0.2.13或更新版本。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.3/com.yx.wholereview-0.1.3.zip",
-      "sha256": "33051cc92677d1ab94bea7a9aa022eb613be6c7cfae83630c0b77511f8bc6a6f"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.4/com.yx.wholereview-0.1.4.zip",
+      "sha256": "70dc69fccfeb35ebd50ab1ca6f05f91e8ff914bda6c619e1da5c18ec10e345db"
     },
     {
       "id": "com.yx.statuscalc",
