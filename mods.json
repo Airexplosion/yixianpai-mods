@@ -59,13 +59,13 @@
     {
       "id": "com.yx.canju",
       "name": "残局求解",
-      "version": "0.2.10",
+      "version": "0.2.11",
       "author": "yxp",
-      "description": "在残局 / 复盘 / 本地练习场里求解（PvP 不可用）。点设置按钮组下方的「残局求解」或 Ctrl+Alt+J 打开左侧秘籍，点顶部「求解」才开始计算；每条推荐方案右上方可独立一键摆牌。练习场中换边即可替另一方求解；修改局面后旧结果失效。含原生代码。",
+      "description": "在残局 / 复盘 / 本地练习场里求解（PvP 不可用）。原生残局与复盘按每套摆法的修为及速度加成判定先后手，只推荐实际可采用的顺序；同速双算。点设置按钮组下方的「残局求解」或 Ctrl+Alt+J 打开秘籍，点「求解」计算，每条方案右上方可一键摆牌。练习场保留先后手双算、可换边求解；局面变化旧结果失效。含原生代码。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.10/com.yx.canju-0.2.10.zip",
-      "sha256": "957e8525ef6f51f29f3cb28a30a585dc56b3a7ca04d2c16979a65c0540934d07"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.11/com.yx.canju-0.2.11.zip",
+      "sha256": "72776bb465a948a60b91dd7debba1603aac2f2fedcf1e91d4647e71211b2d1b0"
     },
     {
       "id": "com.yx.recordextras",
