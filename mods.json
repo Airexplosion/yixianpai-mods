@@ -48,13 +48,13 @@
     {
       "id": "com.yx.guides",
       "name": "流派攻略订阅",
-      "version": "0.1.8",
+      "version": "0.2.0",
       "author": "yxp",
-      "description": "在游戏内发现和订阅人工攻略，支持原生秘籍详情查看、卡组、角色、副职与仙命信息。Ctrl+Alt+G 打开。",
+      "description": "在游戏内发现和订阅人工攻略。0.2.0 新增游戏外独立攻略窗口：原生卡图显示目标阵容哪些已有、哪些还缺，本轮还能换几次，四个境界推荐仙命（提前标出下次突破该选哪个），下一阶段预告；内置过渡求解，按「最早打死对方」算当前牌怎么摆（PvP 可用）。Ctrl+Alt+G 打开面板。含原生代码。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-guides",
-      "download": "https://github.com/Airexplosion/yixianpai-guides/releases/download/v0.1.8/com.yx.guides-0.1.8.zip",
-      "sha256": "3ec2e397db57a4cf4a1b7b3fdd8b936d244dd0a84dab8eca1e35c2126728aac3"
+      "download": "https://github.com/Airexplosion/yixianpai-guides/releases/download/v0.2.0/com.yx.guides-0.2.0.zip",
+      "sha256": "e4958394794ceb15d283ca6628456b237f1e3e4b856f649f32b0f11f0cf4fcdc"
     },
     {
       "id": "com.yx.canju",
