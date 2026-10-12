@@ -81,13 +81,13 @@
     {
       "id": "com.yx.wholereview",
       "name": "整局复盘",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "author": "yxp",
-      "description": "战绩详情原生「整局复盘」逐轮寻找赢法：当轮手牌与上场牌、固定对手摆法和实际先后手，不设每轮时限和摆法数量上限；找到赢法即结束该轮，未找到则持续遍历，算完才判必败。0.1.4默认自动检测并使用全部可用逻辑处理器，可手动设置线程数。显示遍历进度，可随时停止；随机抽样无胜样本仍标未定。只读，不进入战斗、不摆牌。需同时启用残局求解0.2.13或更新版本。",
+      "description": "战绩详情原生「整局复盘」逐轮寻找赢法：用当轮手牌与上场牌、固定对手摆法和实际先后手，不设每轮时限和摆法数量上限；找到赢法即结束该轮，未找到则持续遍历，算完才判必败。0.1.5适配新版战绩001.0008.0001；默认自动使用全部可用逻辑处理器。显示遍历进度，可随时停止；随机抽样无胜样本仍标未定。只读，不进入战斗、不摆牌。需同时启用残局求解 0.2.14 或更新版本。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.4/com.yx.wholereview-0.1.4.zip",
-      "sha256": "70dc69fccfeb35ebd50ab1ca6f05f91e8ff914bda6c619e1da5c18ec10e345db"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.5/com.yx.wholereview-0.1.5.zip",
+      "sha256": "49337cbc2b8c638f96f35acfc2d81825830eed084386f59cd875d24f05ec0445"
     },
     {
       "id": "com.yx.statuscalc",
