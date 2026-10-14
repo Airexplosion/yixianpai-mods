@@ -4,13 +4,13 @@
     {
       "id": "com.yx.arena",
       "name": "练习场",
-      "version": "0.16.9",
+      "version": "0.16.11",
       "author": "yxp",
-      "description": "本地练习与复盘编辑。顶部仅保留快捷发牌和详细设置，其余按钮与血量、体魄、修为输入放入原生二级弹窗；恢复右下角重置当前复盘轮。可分别编辑双方修为，按修为及速度加成决定开打先后手，求解始终保留先后手双算。破限默认关闭。",
+      "description": "本地练习与复盘编辑。0.16.11新增必定同修、我方先手、对方先手、正常修为/速度四种模式，默认按正常修为和速度；重新计算死战之志，避免沿用原战绩状态。保留手牌合成复位、原生详细设置、复盘重置和先后手双算。破限默认关闭。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-arena",
-      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.9/com.yx.arena-0.16.9.zip",
-      "sha256": "a9646d10cdb8db220e85eb2b150ed13b3980ef1c5e6bba052543d869bdf0e7d6"
+      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.11/com.yx.arena-0.16.11.zip",
+      "sha256": "c4e703bff4c4f618fc6bb403b993769410ac4179e94c02b07a76a677744a786b"
     },
     {
       "id": "com.yx.cardcounter",
@@ -59,13 +59,13 @@
     {
       "id": "com.yx.canju",
       "name": "残局求解",
-      "version": "0.2.15",
+      "version": "0.2.16",
       "author": "yxp",
-      "description": "残局、复盘及本地练习场求解。0.2.15修复不足8格时额外普攻导致推荐与实战不一致；先后手始终双算，默认50% / 50%综合排序，并补充被排名挤出的先手或后手赢法。编辑血量、体魄、修为后按新数据重新求解。点击残局求解或Ctrl+Alt+J打开秘籍，每条方案可一键摆牌。PvP不可用，含原生代码。",
+      "description": "残局、复盘及本地练习场求解。0.2.16按每套摆法重新计算同速后手死战，抢先后不再保留原战绩的死战之志，支持练习场四种修为模式。先后手仍双算、默认50% / 50%综合排序及补充赢法。保留不足8格修复、编辑血量/体魄求解和一键摆牌。PvP不可用，含原生代码。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.15/com.yx.canju-0.2.15.zip",
-      "sha256": "ac187af16da5acc913ea25be200971fa57b77e3201588e8e00323b8a9a596d1e"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.16/com.yx.canju-0.2.16.zip",
+      "sha256": "d7541e4bfd44b3d73b31fefca8b6c3a1ba69da3fb881d42db7ea865d8d4a3775"
     },
     {
       "id": "com.yx.recordextras",
