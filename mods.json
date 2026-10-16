@@ -99,6 +99,17 @@
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
       "sha256": "4e6b8b6a0a6ae079ddd4c29a2aa04539a303f80a9887bf53d74b80988fa0335d",
       "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.statuscalc-v0.1.8/com.yx.statuscalc-0.1.8.zip"
+    },
+    {
+      "id": "com.lejiu.dangeralert",
+      "name": "危险牌提示",
+      "version": "1.1.0",
+      "author": "lejiu",
+      "description": "原生图鉴搜索、点选危险牌名单；按对手累计本局曾出现的牌，备战时用游戏原生提示提醒，同轮去重、换局清空。 F6打开牌库并搜索选牌，Shift+F6查看名单，Ctrl+F6重看预警。67项离线测试通过，尚未完成实机界面验收。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/Airexplosion/yixianpai-mods",
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.lejiu.dangeralert-v1.1.0/com.lejiu.dangeralert-1.1.0.zip",
+      "sha256": "41b187aaa7045b2f68ed3cdecc93cde8aee0045e3fdf5973d4849a5248671c91"
     }
   ]
 }
