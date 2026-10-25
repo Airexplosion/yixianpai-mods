@@ -4,13 +4,13 @@
     {
       "id": "com.yx.arena",
       "name": "练习场",
-      "version": "0.16.12",
+      "version": "0.16.13",
       "author": "yxp",
-      "description": "本地练习与复盘编辑。修复五行阵旗复制梦阵时把化神等高境界形态误降为练气；普通牌仍遵守阵旗等级上限。保留四种先后手模式、原生详细设置、复盘重置、血量体魄编辑；破限默认关闭。",
+      "description": "本地练习与复盘编辑。适配当前平衡更新：复盘导入的已知龙魂战意生命奖励按本次先手/同修模式保留或移除，切换模式可恢复。只按快照中已有的本轮奖励量计算，不因选过仙命就凭空发放主动奖励。保留梦阵复制修复、四种先后手模式、复盘重置与生命体魄编辑；破限默认关闭。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-arena",
-      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.12/com.yx.arena-0.16.12.zip",
-      "sha256": "31a322bab02c0bbbc9c3e5ca9590c757381ed2d56cbecbbe5292550dec8348fc"
+      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.13/com.yx.arena-0.16.13.zip",
+      "sha256": "4d2c8040f22e1795653a344feca2a305872e85e5d0540d6d63b17388d4bf2589"
     },
     {
       "id": "com.yx.cardcounter",
@@ -59,13 +59,13 @@
     {
       "id": "com.yx.canju",
       "name": "残局求解",
-      "version": "0.2.18",
+      "version": "0.2.19",
       "author": "yxp",
-      "description": "修复转换卡收回翻面后中断一键摆牌；修复百家之道与梦卡计算：阵旗/灵阵回响保留梦卡境界、临时复制牌组身份、梦星轨推衍星位、水灵波澜翻倍及新版回响阵纹。保留先后手双算、50% / 50%排序与血量体魄编辑求解。含原生代码。",
+      "description": "适配本次平衡更新：幻牌、狂剑赤霄、神器、梦浑天基础池与百家仙命刻纹；补齐开局减攻、点穴、同级复制、轮次门槛和惊雷攻击时机。保留双先后手求解、一键摆牌与50% / 50%排序。含原生计算库。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.18/com.yx.canju-0.2.18.zip",
-      "sha256": "2687600144206fdd878aa6a31a908c10a3456fd4f7bab8e0312febb6094ced05"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.19/com.yx.canju-0.2.19.zip",
+      "sha256": "0568fa0084a583e8c15e2f880f2da8d12e23d065efa4290bb8347fd8836da792"
     },
     {
       "id": "com.yx.recordextras",
@@ -81,24 +81,24 @@
     {
       "id": "com.yx.wholereview",
       "name": "整局复盘",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "author": "yxp",
-      "description": "战绩详情原生「整局复盘」逐轮完整寻找赢法，不设每轮时限和摆法数量上限；找到赢法结束该轮，算完才判必败，随机无胜样本仍标未定。0.1.6适配战绩001.0008.0002及新版百家之道规则，需同时启用残局求解0.2.17或更新版本。默认自动使用全部可用逻辑处理器，显示进度并可停止；只读，不进入战斗、不摆牌。",
+      "description": "战绩详情原生「整局复盘」逐轮完整寻找赢法，不设每轮时限和摆法数量上限；找到赢法结束该轮，算完才判必败，随机无胜样本仍标未定。0.1.7适配战绩001.0008.0003及本次平衡更新规则，需同时启用残局求解0.2.19或更新版本。默认自动使用全部可用逻辑处理器，显示进度并可停止；只读，不进入战斗、不摆牌。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.6/com.yx.wholereview-0.1.6.zip",
-      "sha256": "f33f829fa7e426b944e077f2c41e45d9c474ba057ee84c03b6e56f3ad0285f03"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.7/com.yx.wholereview-0.1.7.zip",
+      "sha256": "c0bc0cb60b272e05956550f7ac59466f548981bb7d0278c32dfbe9144921aadf"
     },
     {
       "id": "com.yx.statuscalc",
       "name": "状态计算器",
-      "version": "0.1.9",
+      "version": "0.1.10",
       "author": "yxp",
-      "description": "0.1.9同步梦卡境界复制、星位与水势、新版回响阵纹和百家之道计算修复。只在备战显示可拖动的一行数字；点击打开原生窗口，可选择悬浮显示自己血量 / 对方血量 / 我方造伤 / 独立造伤，并记住选择。横排前10轮，支持先后手切换；独立造伤不读取对手牌组，命元损失含慈念曲、仙命及共鸣。Ctrl+Alt+S 开关窗口。含原生计算库。",
+      "description": "同步本次平衡更新计算核，支持新版幻牌、神器、梦浑天基础池、百家仙命与刻纹触发。先后手分别计算并重算已知龙魂血量奖励。保留前10轮血量、造伤、独立造伤和命元预测，Ctrl+Alt+S 打开原生窗口。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "sha256": "d9ac64a1076144636a948db848321a6a3be27e6aece0fda46bd470b8eb782e10",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.statuscalc-v0.1.9/com.yx.statuscalc-0.1.9.zip"
+      "sha256": "5b382caaa565dc994483c6df90f37d53231223dfacbdbd5893adb40926864852",
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.statuscalc-v0.1.10/com.yx.statuscalc-0.1.10.zip"
     },
     {
       "id": "com.lejiu.dangeralert",
