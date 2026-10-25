@@ -4,13 +4,13 @@
     {
       "id": "com.yx.arena",
       "name": "练习场",
-      "version": "0.16.14",
+      "version": "0.16.15",
       "author": "yxp",
-      "description": "修复练习场梦·浑天印等复制牌取参返回空值导致空过；按前格五行与等级使用化神基础牌、排除轮换；补齐梦混元无极阵、幻引气剑、梦回响阵纹和万象碱水粽，玉瓶内嵌套复制可正常执行。保留四种先后手模式、复盘重置与原生详细设置，破限默认关闭。",
+      "description": "修复练习场悟道丹等炼化升级无效：补齐原生升级目标响应，按消耗后的索引由原生流程升牌，支持悟道丹、猫薄荷、升级玄韵道果、梦画龙点睛和融汇宝珠。包含0.16.14梦浑天与玉瓶嵌套复制修复。吃草与浇灌变异的服务器结算效果尚未接入。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-arena",
-      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.14/com.yx.arena-0.16.14.zip",
-      "sha256": "e84ab6758a6a5cd7a664bc750f3ee84f9af39558a63e18b92c68cfb2ea505d87"
+      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.15/com.yx.arena-0.16.15.zip",
+      "sha256": "084c8abf00e6823d413a19ab18fbf5b9a1bdf20d2be50d2f998dca2353ad857d"
     },
     {
       "id": "com.yx.cardcounter",
