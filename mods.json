@@ -4,13 +4,13 @@
     {
       "id": "com.yx.arena",
       "name": "练习场",
-      "version": "0.16.16",
+      "version": "0.16.17",
       "author": "yxp",
-      "description": "修复离线练习场吃草和灵植浇灌：从原生炼化入口成功后结算下场战斗效果，成长牌按牌面升级并按0/50/100%概率变异；仅限本地练习场。包含升级丹、梦浑天与玉瓶嵌套复制修复。",
+      "description": "修复灵猫乱剑手牌取参漏算基础攻击段数：按原生规则计算2/3/4基础段数及手牌追加段数，空手也能正常攻击。保留离线炼化、升级丹、玉瓶复制与复盘设置。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-arena",
-      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.16/com.yx.arena-0.16.16.zip",
-      "sha256": "b4b951d29a52c36af0c74eb323adf343a693e13b1102c5d3dd861122e68bca0b"
+      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.17/com.yx.arena-0.16.17.zip",
+      "sha256": "1abec3e226675e678025486a13a84b3534af166ada86a36dd27d0c1e37532b51"
     },
     {
       "id": "com.yx.cardcounter",
@@ -59,13 +59,13 @@
     {
       "id": "com.yx.canju",
       "name": "残局求解",
-      "version": "0.2.20",
+      "version": "0.2.21",
       "author": "yxp",
-      "description": "修复五行忘忧梦复制玉瓶首格的计算：支持实际复制牌、再次行动与防循环，避免误算成普通攻击。同步到双先后手残局求解及整局复盘共用内核，保留当前平衡规则与一键摆牌。含原生计算库。",
+      "description": "同步10月29日游戏卡牌及仙命平衡更新，补齐第三回合减伤、水势转防、卦牌施弱、热血化气等原生流程。适配新战绩匿名玩家标识；与伤害计算器共用新版计算核，保留玉瓶复制与双先后手求解。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.20/com.yx.canju-0.2.20.zip",
-      "sha256": "0dde0dfd1e98b8d306e9b07bb58a8d71aaa563708849c053a39bee26a535a027"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.21/com.yx.canju-0.2.21.zip",
+      "sha256": "1cf234cec2de683de7e31ffe5cbe422f995866cd79c8ce49c2d1277270aec3b2"
     },
     {
       "id": "com.yx.recordextras",
@@ -81,24 +81,24 @@
     {
       "id": "com.yx.wholereview",
       "name": "整局复盘",
-      "version": "0.1.7",
+      "version": "0.1.8",
       "author": "yxp",
-      "description": "战绩详情原生「整局复盘」逐轮完整寻找赢法，不设每轮时限和摆法数量上限；找到赢法结束该轮，算完才判必败，随机无胜样本仍标未定。0.1.7适配战绩001.0008.0003及本次平衡更新规则，需同时启用残局求解0.2.19或更新版本。默认自动使用全部可用逻辑处理器，显示进度并可停止；只读，不进入战斗、不摆牌。",
+      "description": "适配战绩001.0008.0004与新版匿名玩家标识，避免版本不匹配及找不到所属玩家。逐轮完整寻找赢法，默认自动使用全部可用逻辑处理器，显示进度并可停止；需残局求解0.2.21或更新版本。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.7/com.yx.wholereview-0.1.7.zip",
-      "sha256": "c0bc0cb60b272e05956550f7ac59466f548981bb7d0278c32dfbe9144921aadf"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.8/com.yx.wholereview-0.1.8.zip",
+      "sha256": "173e337781c03a27bd2203e98a77ac077d4e9d0e52efb90c8640f04bef7a2944"
     },
     {
       "id": "com.yx.statuscalc",
       "name": "状态计算器",
-      "version": "0.1.11",
+      "version": "0.1.12",
       "author": "yxp",
-      "description": "修复五行忘忧梦在伤害和血量预测中被误算为普通攻击：按五行玉瓶首格复制实际牌，保留再次行动与防循环，并与残局求解使用同一计算核。保留前10轮血量、造伤和独立造伤。",
+      "description": "同步10月29日游戏平衡与战斗流程更新，与残局求解共用新版计算核，更新卡牌数值、仙命触发、回合减伤和水势转防；保留双先后手、前10轮血量与独立造伤。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "sha256": "5dc2207e4f7528fe22c98e3353068bbb3a9fa28982c001fa740bad93e9652009",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.statuscalc-v0.1.11/com.yx.statuscalc-0.1.11.zip"
+      "sha256": "03f9b5c5b77619dbacc8d484bf42668287aef26e77dec001beb597c1101e53fb",
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.statuscalc-v0.1.12/com.yx.statuscalc-0.1.12.zip"
     },
     {
       "id": "com.lejiu.dangeralert",
