@@ -4,13 +4,13 @@
     {
       "id": "com.yx.arena",
       "name": "练习场",
-      "version": "0.16.17",
+      "version": "0.16.18",
       "author": "yxp",
-      "description": "修复灵猫乱剑手牌取参漏算基础攻击段数：按原生规则计算2/3/4基础段数及手牌追加段数，空手也能正常攻击。保留离线炼化、升级丹、玉瓶复制与复盘设置。",
+      "description": "适配新版游戏，补齐天衍落纸云烟开战随机效果，保留原生练习场。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-arena",
-      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.17/com.yx.arena-0.16.17.zip",
-      "sha256": "1abec3e226675e678025486a13a84b3534af166ada86a36dd27d0c1e37532b51"
+      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.18/com.yx.arena-0.16.18.zip",
+      "sha256": "1f1df4258308bfabd059bd3a74e434167ccf85912a04f3342919513ad3e5edc8"
     },
     {
       "id": "com.yx.cardcounter",
@@ -59,13 +59,13 @@
     {
       "id": "com.yx.canju",
       "name": "残局求解",
-      "version": "0.2.21",
+      "version": "0.2.22",
       "author": "yxp",
-      "description": "同步10月29日游戏卡牌及仙命平衡更新，补齐第三回合减伤、水势转防、卦牌施弱、热血化气等原生流程。适配新战绩匿名玩家标识；与伤害计算器共用新版计算核，保留玉瓶复制与双先后手求解。",
+      "description": "适配001.0008.0005，更新卡牌仙命计算与开战随机效果；双先后手完整求解。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.21/com.yx.canju-0.2.21.zip",
-      "sha256": "1cf234cec2de683de7e31ffe5cbe422f995866cd79c8ce49c2d1277270aec3b2"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.22/com.yx.canju-0.2.22.zip",
+      "sha256": "bb20dcc57c1a4993241f817610c5387e28d63a5157d096be0d5a2f6c6a5ed748"
     },
     {
       "id": "com.yx.recordextras",
@@ -114,13 +114,13 @@
     {
       "id": "local.yxp.predictionpoints",
       "name": "天机赛马",
-      "version": "0.8.3",
+      "version": "0.8.4",
       "author": "@TeraE / @Airexplosion",
       "description": "QQ群613486881整点赛马：无需认证，发送“赛马注册 昵称”开通QQ钱包并查看流程；指令可省略斜杠，也可先@机器人。之后认证游戏账号可同步马币。\n\n房间观众匿名显示，成员列表和入房提示不公开真实昵称或UID。\n\n仙府观战预测，只猜冠军；第10回合起封盘，退出角色禁投。第一/二/三名返还锁定额度的100/25/10%。网站同一时间只直播一场公开对局，其余房间在游戏内使用。网页可持续查看公开牌桌、对战胜负和命元走势，YG登录后共用马币账户下注、改名及每日签到领取200马币。\n\n新局隐藏具体评级分数，每局随机交换2–3匹真人马的档位与基础评级，真人昵称不变。\n\nElo使用同服务器elo.kaigua.vip的八人批量API。默认保留人物头像，悬停显示马图，Ctrl+Shift+H切换。\n\n网页：https://duma.kaigua.vip/",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/YXPredictMOD",
-      "download": "https://github.com/Airexplosion/YXPredictMOD/releases/download/v0.8.3/tianji-saima-0.8.3.zip",
-      "sha256": "90c756bd8637aaa74598d76810eddafeee99368270056e53c813c61013654639"
+      "download": "https://github.com/Airexplosion/YXPredictMOD/releases/download/v0.8.4/tianji-saima-0.8.4.zip",
+      "sha256": "bc5d492c971b163ec3ae4809c6568fcb898d541e8d07783670f9ddd0a7ff2489"
     }
   ]
 }
