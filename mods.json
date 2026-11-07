@@ -4,13 +4,13 @@
     {
       "id": "com.yx.arena",
       "name": "练习场",
-      "version": "0.16.18",
+      "version": "0.16.19",
       "author": "yxp",
-      "description": "适配新版游戏，补齐天衍落纸云烟开战随机效果，保留原生练习场。",
+      "description": "修复练习场确认百家候选仙命、切换仙命开关及修改附魔卡位时的网络错误。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-arena",
-      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.18/com.yx.arena-0.16.18.zip",
-      "sha256": "1f1df4258308bfabd059bd3a74e434167ccf85912a04f3342919513ad3e5edc8"
+      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.19/com.yx.arena-0.16.19.zip",
+      "sha256": "391e83734bc3600ea7491922b5c4768c5f4d802e5aac70fcb7647b7ab8c18509"
     },
     {
       "id": "com.yx.cardcounter",
