@@ -125,13 +125,13 @@
     {
       "id": "com.yx.tournamentlobby",
       "name": "比赛大厅",
-      "version": "0.4.16",
+      "version": "0.4.17",
       "author": "yxp",
-      "description": "玩家公开试玩。通过「对战模式 → 比赛大厅」开房、入座或观战。支持双人 Solo、四人编排和四队登仙塔双排。双排可选择百家之道或天衍万象，设置角色与副职业禁限、跨门派传牌，按队编排对手。房内可添加练习傀儡，赛后可按轮复盘。登仙塔设独立裁判席，可点头像实时跟看，备战仅公开上一轮上阵牌。\n\n房主和选手均需在 MOD 管理器安装并启用「比赛大厅」，再通过管理器启动 Steam 版游戏。",
+      "description": "玩家公开试玩。通过「对战模式 → 比赛大厅」开房、入座或观战。支持双人 Solo、四人编排和四队登仙塔双排。双排可选择百家之道或天衍万象，设置角色与副职业禁限、跨门派传牌，按队编排对手。房内可添加练习傀儡，赛后可按轮复盘。登仙塔设独立裁判席，可点头像实时跟看，备战仅公开上一轮上阵牌。 等待房可转让房主，修复跳过战斗动画后下一轮发牌卡顿。\n\n房主和选手均需在 MOD 管理器安装并启用「比赛大厅」，再通过管理器启动 Steam 版游戏。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.tournamentlobby-v0.4.16/com.yx.tournamentlobby-0.4.16.zip",
-      "sha256": "3a3ca56faa6e92c99a8c68011e81fb96284922087fb931186f4bea7c3103ce8f"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.tournamentlobby-v0.4.17/com.yx.tournamentlobby-0.4.17.zip",
+      "sha256": "b71d46364b02cbdec0106614977f706d0f3f3e40bf56b45925b38491539f0995"
     }
   ]
 }
