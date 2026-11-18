@@ -1,0 +1,50 @@
+name: Publish mistake book package
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'releases/com.yx.mistakebook-*.zip'
+      - 'releases/com.yx.mistakebook-*.json'
+      - '.github/workflows/publish-mistakebook.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify release files
+        shell: python
+        run: |
+          import hashlib, json, os, pathlib, zipfile
+          root = pathlib.Path('sources/com.yx.mistakebook')
+          manifest = json.loads((root / 'manifest.json').read_text(encoding='utf-8'))
+          mod_id, version = manifest['id'], manifest['version']
+          stem = f'{mod_id}-{version}'
+          package = pathlib.Path('releases', stem + '.zip')
+          metadata = json.loads(package.with_suffix('.json').read_text(encoding='utf-8'))
+          assert (metadata['id'], metadata['version']) == (mod_id, version)
+          assert hashlib.sha256(package.read_bytes()).hexdigest() == metadata['sha256']
+          with zipfile.ZipFile(package) as archive:
+              assert archive.testzip() is None
+              assert json.loads(archive.read(f'{mod_id}/manifest.json')) == manifest
+              assert f"{mod_id}/{manifest['entry']}" in archive.namelist()
+              assert all(f"{mod_id}/{item['path']}" in archive.namelist() for item in manifest['natives'])
+          with open(os.environ['GITHUB_ENV'], 'a') as env:
+              print(f'VERSION={version}', f'STEM={stem}', f'TAG={mod_id}-v{version}', sep='\n', file=env)
+      - name: Publish verified asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            gh release download "$TAG" --pattern "$STEM.zip" --dir "$RUNNER_TEMP"
+            cmp "releases/$STEM.zip" "$RUNNER_TEMP/$STEM.zip"
+          else
+            gh release create "$TAG" "releases/$STEM.zip" --target "$GITHUB_SHA" --latest=false \
+              --title "败局错题本 $VERSION" --notes-file "releases/$STEM.md"
+          fi
