@@ -184,6 +184,8 @@ namespace YxMistakeBook
         void OpenExercise(Exercise e)
         {
             _active = e;
+            _confirmDelete = false;
+            _notice = "";
             if (!e.CanGrade) { Draw(); return; }
             _board = new int[e.Original.Length];
             // Sort unique IDs so the original board prefix in the captured pool cannot give away its order.
@@ -194,8 +196,7 @@ namespace YxMistakeBook
                 if (count == 0 || sorted[count - 1] != sorted[i]) sorted[count++] = sorted[i];
             _types = new int[count];
             Array.Copy(sorted, _types, count);
-            _cursor = 0; _handPage = 0; _reveal = false; _details = false; _confirmDelete = false;
-            _notice = "";
+            _cursor = 0; _handPage = 0; _reveal = false; _details = false;
             Draw();
         }
 
@@ -207,7 +208,9 @@ namespace YxMistakeBook
             Label("对手牌序　" + Line(_active.Opponent), 22, 150, 850, 80, 22);
             Label("实战原摆法　" + Line(_active.Original), 22, 248, 850, 80, 22);
             Label("当时复验的赢法　" + Line(_active.Answer), 22, 346, 850, 80, 22);
+            Label(_notice, 22, 471, 858, 62, 19);
             Button("回题本", 22, 550, 140, 47, Library);
+            Button(_confirmDelete ? "确认移除" : "移除本题", 168, 550, 136, 47, Remove);
         }
 
         void DrawBoard()
@@ -344,8 +347,10 @@ namespace YxMistakeBook
         void Remove()
         {
             if (!_confirmDelete) { _confirmDelete = true; _notice = "再次点击确认移除这道题"; Draw(); return; }
+            int index = Find(_active.Key);
+            if (index < 0) { Library(); return; }
             var next = new List<object>(_book);
-            next.RemoveAt(Find(_active.Key));
+            next.RemoveAt(index);
             Save(next);
             Library();
         }
