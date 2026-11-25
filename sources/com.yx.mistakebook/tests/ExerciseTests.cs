@@ -32,6 +32,29 @@ namespace YxMistakeBook
             Assert.Throws<ArgumentException>(() => new Exercise(book));
         }
 
+        [Fact]
+        public void MixedNotebookKeepsLegacyDataWithoutRegradingIt()
+        {
+            var legacy = Json.ParseObject(Json.Serialize(Sample.Create().Data));
+            legacy["rules"] = Exercise.LegacyRules;
+            legacy["attempts"] = 3;
+            legacy["passed"] = true;
+            var original = Json.Serialize(legacy);
+            var old = Exercise.TryRead(legacy);
+            var current = Exercise.TryRead(Sample.Create().Data);
+            Assert.NotNull(old);
+            Assert.Equal(3, old.Attempts);
+            Assert.True(Json.GetBool(old.Data, "passed", false));
+            Assert.False(old.CanGrade);
+            Assert.Throws<InvalidOperationException>(() => old.Prediction(old.Original));
+            Assert.Throws<InvalidOperationException>(() => old.Search());
+            Assert.Throws<InvalidOperationException>(() => old.HistoricalRun(null));
+            Assert.Null(Exercise.TryRead(new Dictionary<string, object>()));
+            Assert.Equal(original, Json.Serialize(legacy));
+            Assert.True(current.CanGrade);
+            Assert.Equal("001.0008.0007", current.RulesVersion);
+        }
+
         [Theory]
         [InlineData("foe", true)]
         [InlineData("me", false)]

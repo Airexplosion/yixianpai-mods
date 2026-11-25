@@ -1,13 +1,13 @@
 {
   "id": "com.yx.mistakebook",
   "name": "败局错题本",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "yxp",
   "description": "收藏能确定翻盘的败局轮次，在大厅盲摆重做，交卷后对照实战与一种赢法。",
   "sdkVersion": ">=1.0.0 <2.0.0",
   "entry": "plugins/MistakeBook.dll",
   "entryType": "YxMistakeBook.BookMod",
-  "dependencies": [{ "id": "com.yx.canju", "version": "0.2.23" }],
+  "dependencies": [{ "id": "com.yx.canju", "version": "0.2.24" }],
   "natives": [{ "name": "battle", "path": "native/YxBattleSim.dll" }],
   "provides": { "hotkeys": ["Ctrl+Alt+M"] }
 }

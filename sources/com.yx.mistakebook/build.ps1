@@ -1,14 +1,14 @@
-param([string]$CanjuDir = (Join-Path $PSScriptRoot '../research/world-boss/canju-release/com.yx.canju'))
+param([string]$CanjuDir = (Join-Path $PSScriptRoot '../research/world-boss/canju-0.2.24/com.yx.canju'))
 $ErrorActionPreference = 'Stop'
 $canju = (Resolve-Path -LiteralPath $CanjuDir).Path
 $canjuManifest = Get-Content -Raw -Encoding UTF8 -LiteralPath (Join-Path $canju 'manifest.json') | ConvertFrom-Json
-if ($canjuManifest.id -ne 'com.yx.canju' -or $canjuManifest.version -ne '0.2.23') {
-    throw '需要残局求解 0.2.23 的解压目录'
+if ($canjuManifest.id -ne 'com.yx.canju' -or $canjuManifest.version -ne '0.2.24') {
+    throw '需要残局求解 0.2.24 的解压目录'
 }
 $pinned = @{
-    'plugins/Canju.dll' = '9C0E0C605B14F3CE1E813D717D8B06D724B9F5E6C2AE20B7DEEA2BCC7583988F'
-    'native/YxBattleSim.dll' = '8C90B42C2AE1CA060FEB38A7242EF6A574ADD4E9CF2E4501E227F6432BFC93D7'
-    'data/battle_config.json' = '638D13DC6A14E49B9F06B588303EB5E305C912E8FC1F2249163A727B2B18BF27'
+    'plugins/Canju.dll' = 'BCC4D1BE3DB9F25A9D152FA1EC1C636187A08D1B0E1DB98EFD0566264F157B89'
+    'native/YxBattleSim.dll' = '3A0858365269741BD054263FE1F95B84CFC36ADCF0D1758FC46356694F820584'
+    'data/battle_config.json' = 'E99A55853CFBCC4A6FE99D81696FD2349F14F6852126C7DAB43FCBDD423ECC0B'
     'data/card_effects.json' = '5DC6BB67638A81F4A857F84B386A993B60407CF824A33D61175A759E8980AF9C'
 }
 foreach ($file in $pinned.Keys) {

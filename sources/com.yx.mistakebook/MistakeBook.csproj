@@ -3,11 +3,11 @@
     <TargetFramework>net40</TargetFramework>
     <LangVersion>7.3</LangVersion>
     <AssemblyName>MistakeBook</AssemblyName>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <DebugType>none</DebugType>
     <EnableDefaultItems>false</EnableDefaultItems>
     <YxRefs Condition="'$(YxRefs)' == ''">../yixianpai-mod-sdk/refs</YxRefs>
-    <CanjuDir Condition="'$(CanjuDir)' == ''">../research/world-boss/canju-release/com.yx.canju</CanjuDir>
+    <CanjuDir Condition="'$(CanjuDir)' == ''">../research/world-boss/canju-0.2.24/com.yx.canju</CanjuDir>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="src/**/*.cs" />

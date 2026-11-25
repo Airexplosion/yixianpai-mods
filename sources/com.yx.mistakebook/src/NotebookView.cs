@@ -97,7 +97,8 @@ namespace YxMistakeBook
             else
             {
                 Label((_active.Key == Sample.Key ? "示例　" : "") + Title(_active), 22, 14, 745, 40, 26);
-                if (_details) DrawDetails();
+                if (!_active.CanGrade) DrawHistorical();
+                else if (_details) DrawDetails();
                 else if (_reveal) DrawResult();
                 else DrawBoard();
             }
@@ -163,9 +164,14 @@ namespace YxMistakeBook
             {
                 int index = _bookPage * BookPageSize + row;
                 if (index >= _book.Count) break;
-                var e = new Exercise(_book[index] as Dictionary<string, object>);
+                var e = Exercise.TryRead(_book[index]);
+                if (e == null)
+                {
+                    Label("本条记录无法读取，原数据已保留。", 22, 66 + row * 83, 856, 72, 20);
+                    continue;
+                }
                 string state = Json.GetBool(e.Data, "passed", false) ? "已攻克" : e.Attempts > 0 ? "待再练" : "未做";
-                string text = Title(e) + "\n" + Json.GetString(e.Data, "saved", "") + "　" + state + "　" + Exercise.N(e.Attempts) + " 次";
+                string text = Title(e) + "\n" + Json.GetString(e.Data, "saved", "") + "　" + state + "　" + Exercise.N(e.Attempts) + " 次" + (e.CanGrade ? "" : "　｜　旧版存档");
                 Button(text, 22, 66 + row * 83, 856, 72, delegate { OpenExercise(e); });
             }
             Label(_notice, 22, 488, 850, 44, 18);
@@ -178,6 +184,7 @@ namespace YxMistakeBook
         void OpenExercise(Exercise e)
         {
             _active = e;
+            if (!e.CanGrade) { Draw(); return; }
             _board = new int[e.Original.Length];
             // Sort unique IDs so the original board prefix in the captured pool cannot give away its order.
             var sorted = (int[])e.Pool.Clone();
@@ -190,6 +197,17 @@ namespace YxMistakeBook
             _cursor = 0; _handPage = 0; _reveal = false; _details = false; _confirmDelete = false;
             _notice = "";
             Draw();
+        }
+
+        void DrawHistorical()
+        {
+            string state = Json.GetBool(_active.Data, "passed", false) ? "已攻克" : _active.Attempts > 0 ? "待再练" : "未做";
+            Label("旧版存档　" + _active.RulesVersion + "　｜　" + state + "　" + Exercise.N(_active.Attempts) +
+                " 次　｜　保留原成绩，不按新版规则验算", 22, 68, 850, 63, 22);
+            Label("对手牌序　" + Line(_active.Opponent), 22, 150, 850, 80, 22);
+            Label("实战原摆法　" + Line(_active.Original), 22, 248, 850, 80, 22);
+            Label("当时复验的赢法　" + Line(_active.Answer), 22, 346, 850, 80, 22);
+            Button("回题本", 22, 550, 140, 47, Library);
         }
 
         void DrawBoard()
@@ -245,7 +263,7 @@ namespace YxMistakeBook
 
         void Submit()
         {
-            if (_job != null || _reveal) return;
+            if (_job != null || _reveal || _active == null || !_active.CanGrade) return;
             int limited = 0;
             for (int i = 0; i < _board.Length; i++)
             {

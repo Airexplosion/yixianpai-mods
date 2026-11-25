@@ -8,7 +8,8 @@ namespace YxMistakeBook
     // The saved request is the immutable pre-battle snapshot. Each native call gets its own copy.
     internal sealed class Exercise
     {
-        public const string Rules = "001.0008.0006";
+        public const string Rules = "001.0008.0007";
+        public const string LegacyRules = "001.0008.0006";
         public readonly Dictionary<string, object> Data;
         public readonly Dictionary<string, object> Request;
         public readonly int[] Pool, Original, Opponent;
@@ -17,20 +18,45 @@ namespace YxMistakeBook
         public int Round { get { return Number(Request, "round"); } }
         public int[] Answer { get { return Cards(Data, "answer"); } }
         public int Attempts { get { return Number(Data, "attempts"); } }
+        public string RulesVersion { get { return Json.GetString(Data, "rules", ""); } }
+        public bool CanGrade { get { return RulesVersion == Rules; } }
 
         public Exercise(Dictionary<string, object> data)
         {
+            if (data == null) throw new ArgumentException("缺少题目快照");
             Data = data;
             Request = Json.GetObject(data, "request");
             var me = Json.GetObject(Request, "me");
             Pool = Cards(me, "cards");
             Original = Cards(me, "initial");
             Opponent = Cards(Json.GetObject(Request, "foe"), "cards");
-            if (Json.GetString(data, "rules", "") != Rules || Key.Length == 0 ||
+            if ((!CanGrade && RulesVersion != LegacyRules) || Key.Length == 0 ||
                 Round < 1 || Original.Length < 1 || Original.Length > 10 ||
                 Original.Length != Number(Request, "slots") || Opponent.Length < 1 || Opponent.Length > 10 ||
                 (First != "me" && First != "foe") || Number(Request, "maxConsumeSustain", -1) < 0)
                 throw new ArgumentException("题目快照不完整或规则版本不匹配");
+        }
+
+        public static Exercise TryRead(object row)
+        {
+            try
+            {
+                var exercise = new Exercise(row as Dictionary<string, object>);
+                // Validate fields used when drawing the saved row, without changing its data.
+                if (exercise.Attempts < 0 || exercise.Answer.Length > 10) return null;
+                Number(Json.GetObject(exercise.Request, "me"), "characterId");
+                Number(Json.GetObject(exercise.Request, "foe"), "characterId");
+                return exercise;
+            }
+            catch (ArgumentException) { return null; }
+            catch (FormatException) { return null; }
+            catch (InvalidCastException) { return null; }
+            catch (OverflowException) { return null; }
+        }
+
+        void RequireCurrentRules()
+        {
+            if (!CanGrade) throw new InvalidOperationException("旧版题目只供查看，不用新版规则重新计分");
         }
 
         public static Exercise Create(string key, Dictionary<string, object> request)
@@ -88,6 +114,7 @@ namespace YxMistakeBook
 
         public string Prediction(int[] board)
         {
+            RequireCurrentRules();
             var hand = Remaining(board);
             var request = new Dictionary<string, object>(Request);
             var me = new Dictionary<string, object>(Json.GetObject(Request, "me"));
@@ -102,6 +129,7 @@ namespace YxMistakeBook
         public string Search()
         {
             var request = new Dictionary<string, object>(Request);
+            RequireCurrentRules();
             request["searchMode"] = "existence";
             request["deathFightMode"] = "record";
             request["samples"] = 1;
@@ -112,6 +140,7 @@ namespace YxMistakeBook
 
         public int[] WinningBoard(Dictionary<string, object> report)
         {
+            RequireCurrentRules();
             if (!Json.GetBool(report, "canWin", false)) throw new ArgumentException("本次搜索没有找到赢法");
             if (Json.GetBool(report, "hasRandom", true)) throw new ArgumentException("本轮搜索遇到随机结算，未收录");
             var best = Json.GetArray(report, "best");
@@ -137,6 +166,7 @@ namespace YxMistakeBook
 
         public Dictionary<string, object> HistoricalRun(Dictionary<string, object> report)
         {
+            RequireCurrentRules();
             var runs = Json.GetArray(report, "runs");
             if (runs != null) for (int i = 0; i < runs.Count; i++)
             {
