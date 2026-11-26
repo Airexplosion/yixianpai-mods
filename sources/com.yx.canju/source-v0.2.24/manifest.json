@@ -1,0 +1,21 @@
+{
+  "id": "com.yx.canju",
+  "name": "残局求解",
+  "version": "0.2.24",
+  "author": "yxp",
+  "description": "按可达先后手联合搜索摆牌、刻纹格位、玉瓶和炼化。右侧方案抽屉显示结果，操作详情可分页查看。",
+  "sdkVersion": ">=1.0.0 <2.0.0",
+  "entry": "plugins/Canju.dll",
+  "entryType": "YxCanju.CanjuMod",
+  "natives": [
+    {
+      "name": "solver",
+      "path": "native/YxBattleSim.dll"
+    }
+  ],
+  "provides": {
+    "hotkeys": [
+      "Ctrl+Alt+J"
+    ]
+  }
+}

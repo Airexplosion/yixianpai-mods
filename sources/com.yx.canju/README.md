@@ -1,4 +1,12 @@
-# 残局求解 0.2.6 源码恢复归档
+# 残局求解源码归档
+
+## 0.2.24
+
+[source-v0.2.24/](source-v0.2.24/) 收录随 0.2.24 发布的 MOD 工程、C# 源码、测试和 manifest。[原始发布提交](https://github.com/Airexplosion/yxp-mod-loader/tree/26947c9ed87362af76bc422ea460ad08229c6c94/mods/com.yx.canju) · [安装包](https://github.com/Airexplosion/yixianpai-mods/releases/tag/com.yx.canju-v0.2.24)
+
+编译时按原仓库布局将工程放在 `mods/com.yx.canju/`，使用对应版本的 SDK，并通过 `YxRefs` 指向游戏和 Unity 引用目录。原生求解器的源码见[对应的计算核提交](https://github.com/Airexplosion/yisim_CSharp/commit/ad444ce0fb7ea943ae025d2c8b0592df88d1c2d0)。
+
+## 残局求解 0.2.6 源码恢复归档
 
 `source-v0.2.6/` 从发布包的 Canju.dll 反编译恢复，用于界面与传参核查；不是原始开发源码，未验证重编译。该归档不会替换已发布的插件或原生求解库。
 
