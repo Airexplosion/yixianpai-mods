@@ -143,6 +143,17 @@
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
       "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.mistakebook-v0.1.0/com.yx.mistakebook-0.1.0.zip",
       "sha256": "aa83118051edf4f31e6259078da592fda550e10ce922439970eb74b443dcb6a8"
+    },
+    {
+      "id": "com.sharpobject.defeatfinishers",
+      "name": "鸭神与压路机",
+      "version": "0.1.0",
+      "author": "sharpobject",
+      "description": "屠馗瞬狱杀与林小月时停压路机淘汰演出，保留原战场、角色外观和实际伤害飘字。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/sharpobject/yxp-defeat-finishers",
+      "download": "https://github.com/sharpobject/yxp-defeat-finishers/releases/download/v0.1.0/com.sharpobject.defeatfinishers-0.1.0.zip",
+      "sha256": "1c27b4f350ed8f2282763b89c88979a609c76ee4d724411ac5f77ddb88c09b71"
     }
   ]
 }
