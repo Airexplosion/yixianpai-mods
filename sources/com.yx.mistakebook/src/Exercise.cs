@@ -8,8 +8,9 @@ namespace YxMistakeBook
     // The saved request is the immutable pre-battle snapshot. Each native call gets its own copy.
     internal sealed class Exercise
     {
-        public const string Rules = "001.0008.0007";
-        public const string LegacyRules = "001.0008.0006";
+        public const string Rules = "001.0008.0008";
+        private const string LegacyRules = "001.0008.0006";
+        private const string PreviousRules = "001.0008.0007";
         public readonly Dictionary<string, object> Data;
         public readonly Dictionary<string, object> Request;
         public readonly int[] Pool, Original, Opponent;
@@ -30,7 +31,8 @@ namespace YxMistakeBook
             Pool = Cards(me, "cards");
             Original = Cards(me, "initial");
             Opponent = Cards(Json.GetObject(Request, "foe"), "cards");
-            if ((!CanGrade && RulesVersion != LegacyRules) || Key.Length == 0 ||
+            var rules = RulesVersion;
+            if ((rules != Rules && rules != LegacyRules && rules != PreviousRules) || Key.Length == 0 ||
                 Round < 1 || Original.Length < 1 || Original.Length > 10 ||
                 Original.Length != Number(Request, "slots") || Opponent.Length < 1 || Opponent.Length > 10 ||
                 (First != "me" && First != "foe") || Number(Request, "maxConsumeSustain", -1) < 0)

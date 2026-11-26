@@ -7,7 +7,7 @@
   "sdkVersion": ">=1.0.0 <2.0.0",
   "entry": "plugins/MistakeBook.dll",
   "entryType": "YxMistakeBook.BookMod",
-  "dependencies": [{ "id": "com.yx.canju", "version": "0.2.24" }],
+  "dependencies": [{ "id": "com.yx.canju", "version": "0.2.25" }],
   "natives": [{ "name": "battle", "path": "native/YxBattleSim.dll" }],
   "provides": { "hotkeys": ["Ctrl+Alt+M"] }
 }

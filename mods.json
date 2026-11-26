@@ -4,13 +4,13 @@
     {
       "id": "com.yx.arena",
       "name": "练习场",
-      "version": "0.16.20",
+      "version": "0.16.21",
       "author": "yxp",
-      "description": "适配游戏001.0008.0006，更新卡牌和百家仙命平衡、后招攻击及附魔降级重复规则。",
+      "description": "适配游戏001.0008.0008（Steam build26939223）。同步百家仙命与卡牌平衡，更新战斗计算规则。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-arena",
-      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.20/com.yx.arena-0.16.20.zip",
-      "sha256": "13a4273878f649d5235e5e5f1e446022a264f07f44b314fe57b8cd50b894f7cf"
+      "download": "https://github.com/Airexplosion/yixianpai-arena/releases/download/v0.16.21/com.yx.arena-0.16.21.zip",
+      "sha256": "2d49e11119b097223a1901dd81647c6a069f1f08e9c5b534dc4bf66d985b1924"
     },
     {
       "id": "com.yx.cardcounter",
@@ -59,13 +59,13 @@
     {
       "id": "com.yx.canju",
       "name": "残局求解",
-      "version": "0.2.24",
+      "version": "0.2.25",
       "author": "yxp",
-      "description": "按可达先后手联合搜索摆牌、刻纹格位、玉瓶和炼化。右侧方案抽屉显示结果，操作详情可分页查看。",
+      "description": "适配游戏001.0008.0008（Steam build26939223）。同步百家仙命与卡牌平衡，更新战斗计算规则。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.24/com.yx.canju-0.2.24.zip",
-      "sha256": "eddb50b12675351ce057b35145d932c803fe1a0df7c8d6990e3a552cc094971b"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.canju-v0.2.25/com.yx.canju-0.2.25.zip",
+      "sha256": "b709bf6a34c47a3f7518a8786b832f76cc6196fbfbec6aa63bb40811bef2909a"
     },
     {
       "id": "com.yx.recordextras",
@@ -81,24 +81,24 @@
     {
       "id": "com.yx.wholereview",
       "name": "整局复盘",
-      "version": "0.1.10",
+      "version": "0.1.11",
       "author": "yxp",
-      "description": "在战绩详情逐轮复盘，用双方战前快照、可达先后手、刻纹、玉瓶与炼化搜索赢法。依赖残局求解 0.2.24 或更新版本。",
+      "description": "适配战绩001.0008.0008，逐轮搜索赢法，保留可达先后手、刻纹、玉瓶与炼化联合搜索。依赖残局求解0.2.25或更新版本。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.10/com.yx.wholereview-0.1.10.zip",
-      "sha256": "747079dd9e65e1a0534293ae0f6e64103a48fef22d671e3c6e8131aac2a96bdc"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.11/com.yx.wholereview-0.1.11.zip",
+      "sha256": "82addc5cf493e58506095596ec3f0e82d3e93b4a7b5c8de5bc342790a205f3fa"
     },
     {
       "id": "com.yx.statuscalc",
       "name": "状态计算器",
-      "version": "0.1.13",
+      "version": "0.1.14",
       "author": "yxp",
-      "description": "适配游戏001.0008.0006，更新卡牌和百家仙命平衡、后招攻击及附魔降级重复规则。",
+      "description": "适配游戏001.0008.0008（Steam build26939223）。同步百家仙命与卡牌平衡，更新战斗计算规则。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "sha256": "596083382bfc60d0fe708ae42e672d6a0eafb761131f8ae6e477dbf93201d2d2",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.statuscalc-v0.1.13/com.yx.statuscalc-0.1.13.zip"
+      "sha256": "81b3017e81bbf263a1e6d31ddec1d31c820066408495fbb09b77335766bd08f6",
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.statuscalc-v0.1.14/com.yx.statuscalc-0.1.14.zip"
     },
     {
       "id": "com.lejiu.dangeralert",
@@ -143,6 +143,17 @@
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
       "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.mistakebook-v0.1.0/com.yx.mistakebook-0.1.0.zip",
       "sha256": "aa83118051edf4f31e6259078da592fda550e10ce922439970eb74b443dcb6a8"
+    },
+    {
+      "id": "com.sharpobject.defeatfinishers",
+      "name": "鸭神与压路机",
+      "version": "0.1.1",
+      "author": "sharpobject",
+      "description": "修复练习场中符合条件却不触发淘汰演出的问题；完善屠馗与林小月动作，角色面部只使用游戏原有贴图。保留原战场、实际伤害与飘字。",
+      "sdkVersion": ">=1.0.0 <2.0.0",
+      "repo": "https://github.com/sharpobject/yxp-defeat-finishers",
+      "download": "https://github.com/sharpobject/yxp-defeat-finishers/releases/download/v0.1.1/com.sharpobject.defeatfinishers-0.1.1.zip",
+      "sha256": "4c1794192ba20243fa5b0512c2741fa7cc3b57df71e85fb01e2ef136db388108"
     }
   ]
 }
