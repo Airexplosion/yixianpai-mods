@@ -147,13 +147,13 @@
     {
       "id": "com.sharpobject.defeatfinishers",
       "name": "鸭神与压路机",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "sharpobject",
-      "description": "修复练习场中符合条件却不触发淘汰演出的问题；完善屠馗与林小月动作，角色面部只使用游戏原有贴图。保留原战场、实际伤害与飘字。",
+      "description": "适配 Steam build 26939223，修复内置复盘的淘汰判断、Windows 演出停顿和屠馗启动失败。保留原战场、原生伤害和飘字，使用游戏原有的人物贴图。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/sharpobject/yxp-defeat-finishers",
-      "download": "https://github.com/sharpobject/yxp-defeat-finishers/releases/download/v0.1.1/com.sharpobject.defeatfinishers-0.1.1.zip",
-      "sha256": "4c1794192ba20243fa5b0512c2741fa7cc3b57df71e85fb01e2ef136db388108"
+      "download": "https://github.com/sharpobject/yxp-defeat-finishers/releases/download/v0.1.2/com.sharpobject.defeatfinishers-0.1.2.zip",
+      "sha256": "b5404c9b1a45f3cd43483fe8e5adb0c8e36c4ea3c575dac4cb2282691e88f14d"
     }
   ]
 }
