@@ -1,5 +1,9 @@
-param([string]$CanjuDir = (Join-Path $PSScriptRoot '../research/world-boss/canju-0.2.25/com.yx.canju'))
+param(
+    [string]$CanjuDir = (Join-Path $PSScriptRoot '../research/world-boss/canju-0.2.25/com.yx.canju'),
+    [string]$YxRefs = (Join-Path $PSScriptRoot '../yixianpai-mod-sdk/refs')
+)
 $ErrorActionPreference = 'Stop'
+$refs = (Resolve-Path -LiteralPath $YxRefs).Path
 $canju = (Resolve-Path -LiteralPath $CanjuDir).Path
 $canjuManifest = Get-Content -Raw -Encoding UTF8 -LiteralPath (Join-Path $canju 'manifest.json') | ConvertFrom-Json
 if ($canjuManifest.id -ne 'com.yx.canju' -or $canjuManifest.version -ne '0.2.25') {
@@ -19,9 +23,9 @@ foreach ($file in $pinned.Keys) {
 $project = Join-Path $PSScriptRoot 'MistakeBook.csproj'
 $tests = Join-Path $PSScriptRoot 'tests/MistakeBook.Tests.csproj'
 $packer = Join-Path $PSScriptRoot '../yxp-mod-loader/tools/yx-patch/yx-patch.csproj'
-dotnet build $project -c Release "-p:CanjuDir=$canju" --nologo
+dotnet build $project -c Release "-p:CanjuDir=$canju" "-p:YxRefs=$refs" --nologo
 if ($LASTEXITCODE -ne 0) { throw 'Mod 编译失败' }
-dotnet test $tests -c Release "-p:CanjuDir=$canju" --nologo
+dotnet test $tests -c Release "-p:CanjuDir=$canju" "-p:YxRefs=$refs" --nologo
 if ($LASTEXITCODE -ne 0) { throw '错题本测试失败' }
 $stage = Join-Path $PSScriptRoot ('obj/package/' + [guid]::NewGuid().ToString('N') + '/com.yx.mistakebook')
 foreach ($dir in 'native','data','plugins') {

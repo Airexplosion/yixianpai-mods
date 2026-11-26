@@ -2,6 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <IsPackable>false</IsPackable>
+    <YxRefs Condition="'$(YxRefs)' == ''">../../yixianpai-mod-sdk/refs</YxRefs>
     <CanjuDir Condition="'$(CanjuDir)' == ''">../../research/world-boss/canju-0.2.25/com.yx.canju</CanjuDir>
   </PropertyGroup>
   <ItemGroup>
@@ -9,7 +10,7 @@
     <Reference Include="Yx.ModSdk.Core"><HintPath>../../yxp-mod-loader/sdk-bin/netstandard2.0/Yx.ModSdk.Core.dll</HintPath></Reference>
     <Reference Include="Yx.ModSdk.Testing"><HintPath>../../yxp-mod-loader/sdk-bin/netstandard2.0/Yx.ModSdk.Testing.dll</HintPath></Reference>
     <Reference Include="Canju"><HintPath>$(CanjuDir)/plugins/Canju.dll</HintPath></Reference>
-    <Reference Include="../../yixianpai-mod-sdk/refs/*.dll" />
+    <Reference Include="$(YxRefs)/*.dll" />
     <Content Include="$(CanjuDir)/data/*.json" Link="data/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="$(CanjuDir)/native/YxBattleSim.dll" Link="YxBattleSim.dll" CopyToOutputDirectory="PreserveNewest" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
