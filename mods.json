@@ -81,13 +81,13 @@
     {
       "id": "com.yx.wholereview",
       "name": "整局复盘",
-      "version": "0.1.12",
+      "version": "0.1.13",
       "author": "yxp",
-      "description": "逐轮找赢法，局部搜索最多30秒，可跳过当前轮继续求解。依赖残局求解0.2.26或更新版本。",
+      "description": "逐轮保存赢法与确定结论，重新打开可查看已求解方案，已跳过轮次可单独重算。依赖残局求解0.2.26或更新版本。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/Airexplosion/yixianpai-mods",
-      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.12/com.yx.wholereview-0.1.12.zip",
-      "sha256": "bb9677875505ee752cff668e1bb4a5b0da8c37be9d5f95a4dc7f67064f2976f4"
+      "download": "https://github.com/Airexplosion/yixianpai-mods/releases/download/com.yx.wholereview-v0.1.13/com.yx.wholereview-0.1.13.zip",
+      "sha256": "6579cc1c57248b5eaa3d898d60d10ee94ff9f507d07785b62814d2c435485866"
     },
     {
       "id": "com.yx.statuscalc",
