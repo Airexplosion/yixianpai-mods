@@ -3,7 +3,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <IsPackable>false</IsPackable>
     <YxRefs Condition="'$(YxRefs)' == ''">../../yixianpai-mod-sdk/refs</YxRefs>
-    <CanjuDir Condition="'$(CanjuDir)' == ''">../../research/world-boss/canju-0.2.25/com.yx.canju</CanjuDir>
+    <CanjuDir Condition="'$(CanjuDir)' == ''">../../research/world-boss/canju-0.2.26/com.yx.canju</CanjuDir>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="../src/Exercise.cs;../src/Sample.cs;../src/BattleJob.cs" />
