@@ -147,13 +147,13 @@
     {
       "id": "com.sharpobject.defeatfinishers",
       "name": "鸭神与压路机",
-      "version": "0.1.2",
+      "version": "0.1.4",
       "author": "sharpobject",
-      "description": "适配 Steam build 26939223，修复内置复盘的淘汰判断、Windows 演出停顿和屠馗启动失败。保留原战场、原生伤害和飘字，使用游戏原有的人物贴图。",
+      "description": "修复屠馗火焰中的人形与脚部空洞，优化两套演出的音效混音并保留动作改进；支持 Windows、回放与内置复盘，保留原战场、原生伤害和飘字。人物与表情仅使用游戏原有贴图。",
       "sdkVersion": ">=1.0.0 <2.0.0",
       "repo": "https://github.com/sharpobject/yxp-defeat-finishers",
-      "download": "https://github.com/sharpobject/yxp-defeat-finishers/releases/download/v0.1.2/com.sharpobject.defeatfinishers-0.1.2.zip",
-      "sha256": "b5404c9b1a45f3cd43483fe8e5adb0c8e36c4ea3c575dac4cb2282691e88f14d"
+      "download": "https://github.com/sharpobject/yxp-defeat-finishers/releases/download/v0.1.4/com.sharpobject.defeatfinishers-0.1.4.zip",
+      "sha256": "865a0608438613e1816f40017c1abe324dd92517d411a2b5e5cb32c44b7ae029"
     }
   ]
 }
